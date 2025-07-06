@@ -13,7 +13,7 @@
     --body-background: hsl(216, 12%, 8%);
     --card-background: hsl(213, 19%, 18%);
     --card-secondary-background: hsl(216, 13%, 22%);
-    --heading-clr: hsl(0, 100%, 100%);
+    --white: hsl(0, 100%, 100%);
     --button-background: hsl(25, 97%, 53%);
     --text-clr: hsl(217, 12%, 63%);
 }
@@ -51,7 +51,7 @@ main {
 }
 
 h1 {
-    color: var(--heading-clr);
+    color: var(--white);
 }
 
 p {
@@ -98,7 +98,7 @@ input[type="radio"]:hover {
 }
 
 input[type="radio"]:checked {
-    background-color: var(--heading-clr);
+    background-color: var(--white);
 }
 
 input[type="radio"]:checked::before, input[type="radio"]:hover::before  {
@@ -137,7 +137,7 @@ form > button {
 }
 
 form > button:hover {
-    background-color: var(--heading-clr);
+    background-color: var(--white);
     cursor: pointer;
 }
 
