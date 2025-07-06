@@ -141,13 +141,37 @@ form > button:hover, form > button:focus-visible {
     cursor: pointer;
 }
 
+/*thank you card styles */
+
+.card.thank-you-card {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.card.thank-you-card > img {
+    padding-bottom: 1.8em;
+}
+
+.rating-para {
+    line-height: 1.5;
+    margin: 0;
+    background-color: var(--card-secondary-background);
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    text-align: center;
+    color: var(--orange);
+}
+
+.card.thank-you-card > h1 {
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
     color: var(--text-clr);
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 400px) {
