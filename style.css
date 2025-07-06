@@ -14,7 +14,7 @@
     --card-background: hsl(213, 19%, 18%);
     --card-secondary-background: hsl(216, 13%, 22%);
     --white: hsl(0, 100%, 100%);
-    --button-background: hsl(25, 97%, 53%);
+    --orange: hsl(25, 97%, 53%);
     --text-clr: hsl(217, 12%, 63%);
 }
 
@@ -93,7 +93,7 @@ input[type="radio"]::before {
 }
 
 input[type="radio"]:hover {
-    background-color: var(--button-background);
+    background-color: var(--orange);
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@ input[type="radio"]:nth-child(5)::before {
 }
 
 form > button {
-    background-color: var(--button-background);
+    background-color: var(--orange);
     padding: 0.6em;
     font: inherit;
     font-weight: 700;
