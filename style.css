@@ -136,7 +136,7 @@ form > button {
     letter-spacing: 0.2em;
 }
 
-form > button:hover {
+form > button:hover, form > button:focus-visible {
     background-color: var(--white);
     cursor: pointer;
 }
