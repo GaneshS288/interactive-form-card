@@ -137,7 +137,8 @@ form > button {
 }
 
 form > button:hover {
-    border: 1px solid var(--heading-clr);
+    background-color: var(--heading-clr);
+    cursor: pointer;
 }
 
 .attribution {
