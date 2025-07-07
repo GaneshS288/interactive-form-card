@@ -177,9 +177,17 @@ form > button:focus-visible {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: var(--text-font-size);
     text-align: center;
     color: var(--text-clr);
+}
+
+a {
+    color: var(--orange);
+}
+
+a:visited {
+    color: var(--white);
 }
 
 /*utility class for hiding elements*/
