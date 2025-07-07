@@ -16,57 +16,74 @@
     <body>
         <main>
             <div class="card">
-                <div class="star-icon-container">
-                    <img src="./images/icon-star.svg" alt="star_icon" />
-                </div>
-                <h1>How did we do?</h1>
-
-                <p>
-                    Please let us know how we did with your support request. All
-                    feedback is appreciated to help us improve our offering!
-                </p>
-
-                <form action="/" method="post">
-                    <div class="radio-container">
-                        <input
-                            type="radio"
-                            name="rating"
-                            value="1"
-                            aria-label="one"
-                            required
-                        />
-                        <input
-                            type="radio"
-                            name="rating"
-                            value="2"
-                            aria-label="two"
-                            required
-                        />
-                        <input
-                            type="radio"
-                            name="rating"
-                            value="3"
-                            aria-label="three"
-                            required
-                        />
-                        <input
-                            type="radio"
-                            name="rating"
-                            value="4"
-                            aria-label="four"
-                            required
-                        />
-                        <input
-                            type="radio"
-                            name="rating"
-                            value="5"
-                            aria-label="five"
-                            required
-                        />
+                <div class="form-page">
+                    <div class="star-icon-container">
+                        <img src="./images/icon-star.svg" alt="star_icon" />
                     </div>
+                    <h1>How did we do?</h1>
 
-                    <button type="submit">Submit</button>
-                </form>
+                    <p>
+                        Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve our
+                        offering!
+                    </p>
+
+                    <form action="/" method="post">
+                        <div class="radio-container">
+                            <input
+                                type="radio"
+                                name="rating"
+                                value="1"
+                                aria-label="one"
+                                required
+                            />
+                            <input
+                                type="radio"
+                                name="rating"
+                                value="2"
+                                aria-label="two"
+                                required
+                            />
+                            <input
+                                type="radio"
+                                name="rating"
+                                value="3"
+                                aria-label="three"
+                                required
+                            />
+                            <input
+                                type="radio"
+                                name="rating"
+                                value="4"
+                                aria-label="four"
+                                required
+                            />
+                            <input
+                                type="radio"
+                                name="rating"
+                                value="5"
+                                aria-label="five"
+                                required
+                            />
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="thank-you-page hidden" >
+                    <img src="./images/illustration-thank-you.svg" alt="" />
+
+                    <p class="rating-para">You selected <span class="rating-span">3</span> out of 5</p>
+
+                    <h1>Thank You!</h1>
+
+                    <p class="thank-you-para">
+                        We appreciate you taking the time to give a rating. If
+                        you ever need more support, don't hesitate to get in
+                        touch!
+                    </p>
+                </div>
             </div>
         </main>
 

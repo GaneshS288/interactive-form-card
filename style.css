@@ -16,6 +16,7 @@
     --white: hsl(0, 100%, 100%);
     --orange: hsl(25, 97%, 53%);
     --text-clr: hsl(217, 12%, 63%);
+    --text-font-size: 0.937rem;
 }
 
 body {
@@ -52,12 +53,13 @@ main {
 
 h1 {
     color: var(--white);
+    font-size: 1.8rem;
 }
 
 p {
-    color: hsl(217, 12%, 63%);
+    color: var(--text-clr);
     line-height: 1.6;
-    font-size: 0.937rem;
+    font-size: var(--text-font-size);
 }
 
 form {
@@ -83,7 +85,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]::before {
-    font-size: 0.937rem;
+    font-size: var(--text-font-size);
     font-weight: 700;
     color: var(--text-clr);
     position: absolute;
@@ -101,7 +103,8 @@ input[type="radio"]:checked {
     background-color: var(--white);
 }
 
-input[type="radio"]:checked::before, input[type="radio"]:hover::before  {
+input[type="radio"]:checked::before,
+input[type="radio"]:hover::before {
     color: var(--card-background);
 }
 
@@ -136,20 +139,21 @@ form > button {
     letter-spacing: 0.2em;
 }
 
-form > button:hover, form > button:focus-visible {
+form > button:hover,
+form > button:focus-visible {
     background-color: var(--white);
     cursor: pointer;
 }
 
 /*thank you card styles */
 
-.card.thank-you-card {
+.thank-you-page {
     display: grid;
     justify-items: center;
     text-align: center;
 }
 
-.card.thank-you-card > img {
+.thank-you-page > img {
     padding-bottom: 1.8em;
 }
 
@@ -158,20 +162,29 @@ form > button:hover, form > button:focus-visible {
     margin: 0;
     background-color: var(--card-secondary-background);
     border-radius: 1em;
-    padding: 0.2em 1em;
+    padding: 0.2em 1.2em;
     text-align: center;
     color: var(--orange);
 }
 
-.card.thank-you-card > h1 {
-    margin-bottom: 0;
+.thank-you-page > h1 {
     margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.thank-you-para {
+    margin-top: 0.6em;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
     color: var(--text-clr);
+}
+
+/*utility class for hiding elements*/
+.hidden {
+    display: none;
 }
 
 @media screen and (max-width: 400px) {

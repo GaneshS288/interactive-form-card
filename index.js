@@ -7,38 +7,18 @@ const displaySubmissionResponse = (function () {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        /**@type {HTMLDivElement | null} */
-        const card = document.querySelector(".card");
+        const formPage = document.querySelector(".form-page");
+        const thankYouPage = document.querySelector(".thank-you-page");
+        const ratingSpan = document.querySelector(".rating-span");
 
         const formData = new FormData(form);
         const rating = formData.get("rating");
 
-        const thankYouIllustrationImg = createElement("img");
-        if (thankYouIllustrationImg instanceof HTMLImageElement)
-            thankYouIllustrationImg.src = "./images/illustration-thank-you.svg";
-
-        const ratingPara = createElement(
-            "p",
-            `You selected ${rating} out of 5`
-        );
-        ratingPara.classList.add("rating-para");
-
-        const thankYouHeading = createElement("h1", "Thank you!");
-
-        const thankYouParaText = `We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!`;
-        const thankYouPara = createElement("p", thankYouParaText);
-
-        const thankYouCard = createElement("div");
-        thankYouCard.classList.add("card", "thank-you-card");
-        thankYouCard.append(
-            thankYouIllustrationImg,
-            ratingPara,
-            thankYouHeading,
-            thankYouPara
-        );
-
-        if (card instanceof HTMLDivElement) card.replaceWith(thankYouCard);
-        else console.error("card div doesn't exist");
+        if(ratingSpan && formPage && thankYouPage) {
+            ratingSpan.textContent = `${rating}`;
+            formPage.classList.add("hidden");
+            thankYouPage.classList.remove("hidden");
+        }
     });
 })();
 
