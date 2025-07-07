@@ -22,27 +22,4 @@ const displaySubmissionResponse = (function () {
     });
 })();
 
-/**
- * utility for creating html elements
- * @overload
- * @param {string} tagName
- * @param {string} textContent
- * @returns {HTMLElement}
- */
 
-/**
- * @overload
- * @param {string} tagName
- * @returns {HTMLElement}
- */
-
-/**
- * @param {string} tagName the element tag (p, h1 etc.)
- * @param {string | undefined} textContent text to put inside the element
- */
-
-function createElement(tagName, textContent) {
-    const element = document.createElement(tagName);
-    if (typeof textContent === "string") element.textContent = textContent;
-    return element;
-}
